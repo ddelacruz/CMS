@@ -10,8 +10,16 @@ class Default_IndexController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        // action body
+        if(!$this->_getParam('url')){
+            $this->view->title = 'Index Modulo Default';
+        }else{
+            $this->view->title = $this->_getParam('url');
+        }
+        
     }
+    
+    
+    
 
 
 }
