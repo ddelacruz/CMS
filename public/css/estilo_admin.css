@@ -1,0 +1,24 @@
+/* 
+    Document   : estilo_admin
+    Created on : 28/06/2012, 05:08:25 PM
+    Author     : ddelacruz
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+*{
+    margin: 0;
+}
+
+body{
+    background: #0398CA;
+    color: white;
+    font-family: Arial;
+    font-size: 14px;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+}
+
