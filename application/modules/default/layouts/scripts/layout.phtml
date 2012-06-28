@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>CMS</title>
+        <meta name="description" content="">
+        <meta name="author" content="">        
+        <link href="<?php echo $this->baseUrl() ?>/css/bootstrap.css" rel="stylesheet"></link>
+        <link href="<?php echo $this->baseUrl() ?>/css/bootstrap.responsive.css" rel="stylesheet"></link>
+        <link href="<?php echo $this->baseUrl() ?>/css/estilo.css" rel="stylesheet"></link>
+        <script src="<?php echo $this->baseUrl() ?>/js/modernizr.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <section class="container-fluid topHeader">
+            <div class=""></div>
+        </section>
+        <section class="container">
+            <header>
+                <div class="row-fluid">
+                    <div class="span3"> logo</div>
+                    <div class="span9">slider</div>
+                </div>
+                
+            </header>
+            <?php echo $this->layout()->content; ?>
+        </section>
+        
+    </body>
+</html>
