@@ -5,11 +5,42 @@
         <title>CMS ADMIN</title>
         <meta name="description" content="">
         <meta name="author" content="">
+        <link href="<?php echo $this->baseUrl() ?>/css/bootstrap.css" rel="stylesheet"></link>
+        <link href="<?php echo $this->baseUrl() ?>/css/bootstrap.responsive.css" rel="stylesheet"></link>
         <link href="<?php echo $this->baseUrl() ?>/css/estilo_admin.css" rel="stylesheet"></link>
         
         <script src="<?php echo $this->baseUrl() ?>/js/modernizr.js" type="text/javascript" charset="utf-8"></script>
     </head>
     <body>
-        <?php echo $this->layout()->content; ?>
+    <?php 
+        $controller = Zend_Controller_Front::getInstance()->getRequest()->getControllerName();
+        if($controller=="login"){ ?>
+            <section id="formLogin">
+                <?php echo $this->layout()->content; ?>
+            </section>  
+     <?php  }else{ ?>
+            <section id="contenedorAdmin" class="container">
+                <div class="row-fluid">
+                    <div class="header">
+                        
+                    </div>                    
+                </div>
+                <div class="row-fluid" id="navGeneral">                    
+                    <div class="span8">
+                        <div class="panelAdmin">Panel de Administración :</div>
+                    </div>
+                    <div class="span4">
+                        <div class="cerrar">
+                            <a href="admin/logout">Cerrar Sesión</a>
+                        </div>
+                    </div>                    
+                </div>      
+            </section>   
+            <section class="container" id="contenedorPrincipal">
+                <?php echo $this->layout()->content; ?>
+            </section>
+     <?php   }    
+     ?>
+        
     </body>
 </html>
