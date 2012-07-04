@@ -1,0 +1,44 @@
+<fieldset>
+    <legend>Información de la Empresa</legend>
+    <div class="control-group">
+        <label class="control-label">Nombre / Razón Social</label>
+        <?php echo $this->element->getElement('empresa'); ?>
+    </div>
+        <div class="control-group">
+        <label class="control-label">Documento</label>
+        <div class="controls">            
+            <?php echo $this->element->getElement('documento'); ?>            
+            <?php echo $this->element->getElement('numdocumento'); ?>
+        </div>        
+    </div>
+    <div class="control-group">
+        <label class="control-label">Fecha de Aniversario</label>
+        <?php echo $this->element->getElement('aniversario'); ?>
+    </div>
+    <div class="control-group">
+        <label class="control-label">Logo</label>
+        <?php echo $this->element->getElement('logo'); ?>
+    </div>
+    <fieldset>
+    <legend>Configuración del Sitio Web</legend>
+    <div class="control-group">
+        <label class="control-label">Dominio Web</label>
+        <?php echo $this->element->getElement('dominio'); ?>
+    </div>           
+    <div class="control-group">
+        <label class="control-label">Titulo del Sitio Web</label>
+        <?php echo $this->element->getElement('titulo'); ?>
+    </div>
+    <div class="control-group">
+        <label class="control-label">Descripción</label>
+        <?php echo $this->element->getElement('descripcion'); ?>
+    </div>
+    <div class="control-group">
+        <label class="control-label">Descripción</label>
+        <?php echo $this->element->getElement('keywords'); ?>
+    </div>
+    <div class="control-group">
+        <label class="control-label">Descripción</label>
+        <?php echo $this->element->getElement('footer'); ?>
+    </div>
+</fieldset>

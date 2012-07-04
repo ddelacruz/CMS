@@ -72,10 +72,21 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $route = new Zend_Controller_Router_Route(
             'admin/:controller/*',
             array(
-                'module' => 'admin'
+                'module' => 'admin',
+//                'controller'=> '',
+//                'action'    => ''
             )
         ); 
         $router->addRoute('admin1', $route);
+        $route = new Zend_Controller_Router_Route(
+            'admin/:controller/:action/*',
+            array(
+                'module' => 'admin',
+//                'controller'=> '',
+//                'action'    => ''
+            )
+        ); 
+        $router->addRoute('admin2', $route);
     }
 }
 

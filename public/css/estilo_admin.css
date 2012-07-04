@@ -83,7 +83,13 @@ body{
     vertical-align: middle;
 }
 
-
+.control-group{
+/*    background: #EEF2F7;*/
+    margin: 0;
+}
+.control-group1 {
+    display: inline-block;
+} 
 .divLogin{
     display: inline;
     float: left;
@@ -133,7 +139,26 @@ body{
 }
 .footer{
     background: #0d2c52;
-    height: 60px;
+    border-radius:10px;
+    height:25px;
+    margin-top: 10px;
+    padding: 25px;
+    text-align: center;
+    
+}
+
+.form-horizontal{
+    font-family: ubuntu;    
+    padding: 10px 50px;
+}
+
+.form-horizontal legend{
+    background: #D1DCEB;
+    color: #1e4f8a;
+    font-family:  ubuntu;
+    font-size: 16px;
+    margin-bottom: 0;
+    padding: 1px 10px;
 }
 .header{
     background: #0d2c52;
